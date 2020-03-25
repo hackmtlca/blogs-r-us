@@ -11,6 +11,7 @@
 <html>
     <head>
         <style>
+            /* Basically a CSS god - Jack */
             form {
                 width: 100%;
                 display: grid;
@@ -18,8 +19,15 @@
                 justify-content: center;
             }
         </style>
+        <?php
+            // Why would anyone spend time making an actual dialog box? - A.L
+            if(isset($_POST["username"]) && isset($_POST["password"])) {
+                echo "<script>alert('Account created')</script>";
+            }
+        ?>
     </head>
     <body>
+        <!-- I found this on a Russian site 🚀 - A.L -->
         <h1>Blogs "Я" Us</h1>
         <p>Let us take care of your private blogs!</p>
         <br /><br /><br /><br /><br />

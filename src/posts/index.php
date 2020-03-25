@@ -9,8 +9,12 @@
         die("");
     }
 
+    echo "<!-- Hey Jack, I don't know what these lines do. Can you explain it to me later? A.L -->";
+
     $username = $_POST["username"];
     $password = $_POST["password"];
+
+    echo "<!-- SELECT id FROM users WHERE username = '" . $username  . "' AND password = '" . md5($password) . "' -->";
 
     $result = mysqli_query($conn, "SELECT id FROM users WHERE username = '" . $username  . "' AND password = '" . md5($password) . "'") or die("Bye Hacker.");
 
@@ -22,7 +26,6 @@
         die("Are you sure you exist 👩‍🚀🐱‍🚀?");
     }
 
-    echo "<!-- Hey Jack, I don't know what this line does. Can you explain it to me later? A.L -->";
     echo "<!-- SELECT posts.id, posts.title, posts.content FROM users RIGHT JOIN posts ON users.id = posts.user_id WHERE username = '" . $username  . "' AND password = '" . md5($password) . "' ORDER BY posts.id DESC -->";
 
     $result = mysqli_query($conn, "SELECT users.id, posts.id, posts.title, posts.content FROM users RIGHT JOIN posts ON users.id = posts.user_id WHERE username = '" . $username  . "' AND password = '" . md5($password) . "' ORDER BY posts.id DESC") or die("Bye Hacker.");
@@ -30,7 +33,7 @@
 
 <html>
     <head>
-        <!-- I guess this is where we put all the styles? -->
+        <!-- I guess this is where we put all the styles? - A.L -->
         <style>
             table {
                 border-collapse: collapse;
@@ -47,7 +50,7 @@
 
     <body>
         <h3>Welcome <?= $username ?></h3>
-        <table id="I'm so fed up of programming. Can't I just pay someone to do this?">
+        <table id="I'm so fed up of fixing this site from hackers. Can't I just pay someone to do this? - Jack">
             <tr>
                 <th>Title</th>
                 <th>Content</th>
@@ -61,80 +64,17 @@
             ?>
         </table>
         <script>
-            const doSomething = () => {
-                // I just copied this code online or whatever. It's working I guess 🧜‍♂️.
+            /**
+            * If you are a hacker, get away now 😡😡.
+            * 
+            * Lol - H4ck3r
+            */
+            const iDontReallyKnowWhatItDoesButItWorksAL = () => {
+                // I just copied this code online. It's working I guess 🧜‍♂️. - A.L
 
+                fetch(`./?id=<?= $id ?>&title=${document.getElementById("titleeeeeeeee").value}&content=${document.getElementById("dataOrWhatever LOL").value}`).then(e => e.text()).then(data => console.log(data));
 
-
-
-
-
-
-
-
-                /**
-                 * 
-                 * 
-                 * 
-                 * 
-                 * 
-                 * If you are a hacker, get away now 😡😡.
-                 * 
-                 * 
-                 * 
-                 * 
-                 */
-
-
-
-
-
-
-
-
-                fetch(
-                    
-                    
-`./?id=<?= $id ?>&title=${
-    
-    
-    
-    
-    
-    document.getElementById("titleeeeeeeee"
-    
-    
-    ).value}&content=${document.getElementById("dataOrWhatever LOL").value}`)
-    
-    
-    
-    .then(e => e.text())
-    
-    
-    
-                                                .then(data => console.log(data));
-
-                document.getElementById("I'm so fed up of programming. Can't I just pay someone to do this?")
-
-
-                                        for(let i = 0; i < 10; i ++){
-                    console.log("🤡🥺🤡🤠🤡🥺🤠🤡🤠🥺🤡");
-                }
-
-                var row = document.getElementById("I'm so fed up of programming. Can't I just pay someone to do this?").insertRow(1);
-
-
-
-
-
-
-
-
-
-
-
-
-                console.log("I did something here and it did something there.");
+                var row = document.getElementById("I'm so fed up of fixing this site from hackers. Can't I just pay someone to do this? - Jack").insertRow(1);
 
                 var cell1 = row.insertCell(0);
                 var cell2 = row.insertCell(1);
@@ -143,11 +83,11 @@
                 cell2.innerHTML = document.getElementById("dataOrWhatever LOL").value;
             }
         </script>
-        <div>
+        <div id="Hackers, there is nothing here! Move along!">
             <h3>Make a Secret Post</h3>
             <input id="titleeeeeeeee" />
             <input id="dataOrWhatever LOL" />
-            <button onClick="doSomething()">Submit</button>
+            <button onClick="iDontReallyKnowWhatItDoesButItWorksAL()">Submit</button>
         </div>
     </body>
 </html>
