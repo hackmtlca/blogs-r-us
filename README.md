@@ -4,7 +4,7 @@ This problem is part of the `Intro to Hacking Workshop`. View the [Bug Bounty Gu
 
 ## Context
 
-Blogs "Я" Us is a casual blogging site for you and your network. Everything is private, no one should have access to other's information. This said, during the past few weeks, Jack reported that there were weird changed to the website. He says that he's tired of looking for `SQL Injections`, he needs others' help. Can you find out what's going on?
+Blogs "Я" Us is a casual blogging site for you and your network. Everything is private, no one should have access to other's information. This said, during the past few weeks, Jack reported that there were weird changes happening to the website. He says that he's tired of looking for `SQL Injections`, he needs others' help. Can you find out what's going on?
 
 ## Addition Note
 
